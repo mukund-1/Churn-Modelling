@@ -34,4 +34,31 @@ pip install -r reqirements.txt
 
 - scaler.pkl — Saved scaler for feature normalization.
 
-- Make sure these files are in the same directory as the Streamlit app script.
+Make sure these files are in the same directory as the Streamlit app script.
+
+## How to Run
+
+Run the Streamlit app using:
+
+```bash
+streamlit run app.py
+
+```
+Replace app.py with the name of your Python script containing the app code.
+
+## Usage
+
+- Use the dropdowns, sliders, and input fields to provide customer information.
+
+- The app will display the predicted churn probability.
+
+- A message will indicate if the customer is likely to churn based on the threshold of 0.5.
+
+
+## Notes
+
+- The model expects inputs to be preprocessed exactly as done during training.
+
+- The app uses label encoders and scalers saved during model training.
+
+- Make sure the encoders and scaler match the model to avoid inconsistencies.
